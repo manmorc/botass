@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BotAss</title>
+<style>
+  :root { --bg: #fdfdfc; --fg: #1d1d1b; --muted: #5c5c57; --link: #1a5fb4; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #171716; --fg: #ececea; --muted: #a5a5a0; --link: #8cb4f0; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 0; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .sub { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>BotAss</h1>
+  <p class="sub">A personal assistant for a single user. Not a public service.</p>
+
+  <p>BotAss is a private, self-hosted assistant that its owner runs on his own computer. It helps
+  that one person with his own Gmail and Google Calendar: it can search and read his mail, see his
+  calendar, prepare email drafts and propose calendar events.</p>
+
+  <h2>Who can use it</h2>
+  <p>Only the owner of the Google Cloud project that BotAss belongs to. There is no sign-up, no
+  account system and no way for anyone else to use it. If you reached a Google sign-in screen for
+  BotAss and you are not its owner, please do not grant access.</p>
+
+  <h2>What it does with Google data</h2>
+  <ul>
+    <li>Reads the owner's Gmail messages and calendar events when he asks a question about them.</li>
+    <li>Creates email drafts in the owner's own mailbox.</li>
+    <li>Sends an email or creates/changes a calendar event <strong>only after the owner explicitly
+    confirms each action</strong> (a separate "Send / Cancel" confirmation for every item).</li>
+    <li>Never deletes mail or calendar events.</li>
+  </ul>
+
+  <h2>Where the data goes</h2>
+  <p>Processing happens locally on the owner's computer. Google data is not sold, not shared with
+  third parties and not used for advertising or for training models. Details are in the
+  <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · Contact: <a href="https://github.com/manmorc/botass/issues">github.com/manmorc/botass/issues</a>
+  </footer>
+</main>
+</body>
+</html>

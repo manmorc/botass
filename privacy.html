@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BotAss Privacy Policy</title>
+<style>
+  :root { --bg: #fdfdfc; --fg: #1d1d1b; --muted: #5c5c57; --link: #1a5fb4; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #171716; --fg: #ececea; --muted: #a5a5a0; --link: #8cb4f0; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 0; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .sub { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">BotAss · effective 10 October 2026</p>
+
+  <h2>Summary</h2>
+  <p>BotAss is a personal assistant used by exactly one person — the owner of the Google Cloud
+  project it belongs to. It works only with that person's own Google account. Nobody else's data
+  is collected.</p>
+
+  <h2>Google data it accesses</h2>
+  <ul>
+    <li><strong>Gmail</strong> (read; create drafts; send a draft): to answer the owner's questions
+    about his mail and to prepare replies. A message is sent only after the owner confirms that
+    specific message.</li>
+    <li><strong>Google Calendar</strong> (read; create and edit events): to answer questions about
+    the owner's schedule and to add events he confirms. BotAss does not delete mail or events.</li>
+  </ul>
+
+  <h2>How the data is processed and stored</h2>
+  <ul>
+    <li>Processing happens locally, on the owner's own computer.</li>
+    <li>The OAuth refresh token is stored only in a local file on that computer. Access tokens are
+    kept in memory only.</li>
+    <li>BotAss keeps no database of your mail or calendar. Short-lived working data (for example,
+    a pending confirmation for an email draft) is kept locally and removed after use.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>Google user data is <strong>not sold, not shared with or transferred to third parties</strong>,
+  not used for advertising, and not used to develop, improve or train generalized AI or machine
+  learning models. When the owner switches the assistant to a cloud-hosted language model, all
+  Gmail and Calendar functions are switched off automatically, so mail and calendar content is not
+  sent to that cloud model.</p>
+
+  <h2>Limited Use</h2>
+  <p>BotAss's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+  User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Revoking access and deletion</h2>
+  <p>Access can be revoked at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  Deleting the local token file removes BotAss's access on the owner's computer.</p>
+
+  <h2>Contact</h2>
+  <p><a href="https://github.com/manmorc/botass/issues">github.com/manmorc/botass/issues</a></p>
+
+  <footer><a href="index.html">BotAss home</a></footer>
+</main>
+</body>
+</html>
